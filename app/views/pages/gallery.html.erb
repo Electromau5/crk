@@ -98,7 +98,7 @@
           <% end %>
           <% end %>
   </div><br />
-          <h2 style="text-align:center;background-color: #000;color: #fff">EVENTS AND PRESS</h2>
+          <h2 style="text-align:center;background-color: #000;color: #fff">CAMPAIGNS</h2>
   <div class="container">
       <% Pin.all.where(:name => 'Campaigns').each do |p| %>
         <%= link_to p.image.url(:large), :class => 'fancybox', :rel => 'group' do %>
