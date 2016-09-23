@@ -25,121 +25,32 @@
 </nav>
 <h2 style="text-align:center;background-color: #000;color: #fff">INTERNAL COMMUNICATIONS</h2>
   <div class="container">
-      <a class="fancybox" href="<%= image_path('intcomm-05.jpg') %>" >  
-        <div class="box col2">
-          <%= image_tag('intcomm-05.jpg') %>
-        </div>
-      </a>
-      <a class="fancybox" href="<%= image_path('intcomm-06.jpg') %>">  
-        <div class="box col2">
-          <%= image_tag('intcomm-06.jpg') %>
-        </div>  
-      </a>
-      <a class="fancybox" href="<%= image_path('intcomm-13.jpg') %>">  
-        <div class="box col2">
-          <%= image_tag('intcomm-13.jpg') %>
-        </div>
-      </a>
-      <a class="fancybox" href="<%= image_path('intcomm-16.jpg') %>" title="Addressing dealers and Sales force . Current trends in Branding and Marketing were shared. Rural market involvement was encouraged">  
-        <div class="box col2">
-          <%= image_tag('intcomm-16.jpg') %>
-        </div>
-      </a>
-      <a class="fancybox" href="<%= image_path('intcomm-17.jpg') %>" title="With the world famous ‘Snoopy’">  
-        <div class="box col2">
-          <%= image_tag('intcomm-17.jpg') %>
-        </div>
-      </a>
-      <a class="fancybox" href="<%= image_path('intcomm-21.jpg') %>" title="Welcoming the SPIC family with Snoopy. The idea to use snoopy was to enthuse the children of the SPIC family">  
-        <div class="box col2">
-          <%= image_tag('intcomm-21.jpg') %>
-        </div>
-      </a>
-      <a class="fancybox" href="<%= image_path('intcomm-23.jpg') %>" title="Created many Internal Communication Programs such as Forum of excellence, Lunch with VC, Rush Hour, Round table meetings.Addressing  one such program with Vice-Chairman">  
-        <div class="box col2">
-          <%= image_tag('intcomm-23.jpg') %>
-        </div>
-      </a>
+      <% Pin.all.where(:name => 'Internal Communications').each do |p| %>
+        <%= link_to p.image.url(:large), :class => 'fancybox', :rel => 'group' do %>
+          <div class="box col2">
+            <%= image_tag p.image.url(:thumb) %>
+          </div>
+          <% end %>
+          <%= link_to p.image2.url(:large), :class => 'fancybox', :rel => 'group' do %>
+          <div class="box col2">
+            <%= image_tag p.image2.url(:thumb) %>
+          </div>
+          <% end %>
+          <%= link_to p.image3.url(:large), :class => 'fancybox', :rel => 'group' do %>
+          <div class="box col2">
+            <%= image_tag p.image3.url(:thumb) %>
+          </div>
+          <% end %>
+          <%= link_to p.image4.url(:large), :class => 'fancybox', :rel => 'group' do %>
+          <div class="box col2">
+            <%= image_tag p.image4.url(:thumb) %>
+          </div>
+          <% end %>
+          <%= link_to p.image5.url(:large), :class => 'fancybox', :rel => 'group' do %>
+          <div class="box col2">
+            <%= image_tag p.image5.url(:thumb) %>
+          </div>
+          <% end %>
+      <% end %>
   </div><br />
-  <h2 style="text-align:center;background-color: #000;color: #fff">EVENTS AND PRESS</h2>
-    <div class="container">
-      <a class="fancybox" href="<%= image_path('event-12.jpg') %>" title="Sponsored the Indian-Asean Busness Summit at New Delhi"> 
-        <div class="box col2">
-          <%= image_tag('event-12.jpg') %>
-        </div>
-      </a>
-      <a class="fancybox" href="<%= image_path('event-14.jpg') %>" title="At the aero- India exposition in Bangalore"> 
-        <div class="box col2">
-          <%= image_tag('event-14.jpg') %>
-        </div>
-      </a>
-      <a class="fancybox" href="<%= image_path('event-15.jpg') %>" title="Created the conceptualized the idea for  SPIC Stall  at the Indochem Exposition in New Delhi"> 
-        <div class="box col2">
-          <%= image_tag('event-15.jpg') %>
-        </div>
-      </a>
-      <a class="fancybox" href="<%= image_path('landing.jpg') %>" > 
-        <div class="box col2">
-          <%= image_tag('landing.jpg') %>
-        </div>
-      </a>
-      <a class="fancybox" href="<%= image_path('event-18.jpg') %>" title="With the Press delegates at the conference"> 
-        <div class="box col2">
-          <%= image_tag('event-18.jpg') %>
-        </div>
-      </a>
-      <a class="fancybox" href="<%= image_path('event-19.jpg') %>" title="Invited to address the Dalmia Cements Distributors  meet in Kodaikanal on Branding trends"> 
-        <div class="box col2">
-          <%= image_tag('event-19.jpg') %>
-        </div>
-      </a>
-      <a class="fancybox" href="<%= image_path('event-22.jpg') %>" title="At the Press conference of DSQWorld.com with the Ceo  to project the Company on a new technology"> 
-        <div class="box col2">
-          <%= image_tag('event-22.jpg') %>
-        </div>
-      </a>
-      <a class="fancybox" href="<%= image_path('event-24.jpg') %>" title="Addressing the Tamilnadu Boxers Association as an invitee"> 
-        <div class="box col2">
-          <%= image_tag('event-24.jpg') %>
-        </div>
-      </a>
-       <a class="fancybox" href="<%= image_path('event-20.jpg') %>" title="At the India- Asean Business Meet addressed by the then Hon’ble Prime Minister Dr Manmohan Singh"> 
-        <div class="box col2">
-          <%= image_tag('event-20.jpg') %>
-        </div>
-      </a>
-    </div><br />
-  <h2 style="text-align:center;background-color: #000;color: #fff">CAMPAIGNS</h2>
-      <div class="container"> 
-        <a class="fancybox" href="<%= image_path('campaign-07.jpg') %>" title="Press Campaign: Ideated and conceived the whole campaign  which increased Client’s deposit drive"> 
-          <div class="box col2">
-            <%= image_tag('campaign-07.jpg') %>
-          </div>
-        </a>
-        <a class="fancybox" href="<%= image_path('campaign-08.jpg') %>" title="Press Campaign: Ideated and conceived the whole campaign  which increased Client’s deposit drive"> 
-          <div class="box col2">
-            <%= image_tag('campaign-08.jpg') %>
-          </div>
-        </a>
-        <a class="fancybox" href="<%= image_path('campaign-09.jpg') %>" title="Press Campaign: Ideated and conceived the whole campaign  which increased Client’s deposit drive"> 
-          <div class="box col2">
-            <%= image_tag('campaign-09.jpg') %>
-          </div>
-        </a>
-        <a class="fancybox" href="<%= image_path('campaign-25.jpg') %>" title="Press Campaign: Ideated and conceived the whole campaign  which increased Client’s deposit drive"> 
-          <div class="box col2">
-            <%= image_tag('campaign-25.jpg') %>
-          </div>
-        </a>
-        <a class="fancybox" href="<%= image_path('campaign-26.jpg') %>" title="Press Campaign: Ideated and conceived the whole campaign  which increased Client’s deposit drive"> 
-          <div class="box col2">
-            <%= image_tag('campaign-26.jpg') %>
-          </div>
-        </a>
-        <a class="fancybox" href="<%= image_path('campaign-27.jpg') %>" title="Press Campaign: Ideated and conceived the whole campaign  which increased Client’s deposit drive"> 
-          <div class="box col2">
-            <%= image_tag('campaign-27.jpg') %>
-          </div>
-        </a>
-    </div><br />
-    </div>
+     

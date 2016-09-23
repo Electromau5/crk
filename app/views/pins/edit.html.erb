@@ -1,0 +1,40 @@
+<div class="container">
+	<h2> Add a new set of Photos</h2>
+<%= form_for @pin do |p| %>
+	<%= p.label :name %><br />
+	<%= p.text_field :name, class: "form-control" %><br />
+	<%= p.label :image %>
+	<%= p.file_field :image, class: "form-control"%><br />
+	<%= p.label :image2 %>
+	<%= p.file_field :image2, class: "form-control"%><br />
+	<%= p.label :image3 %>
+	<%= p.file_field :image3, class: "form-control"%><br />
+	<%= p.label :image4 %>
+	<%= p.file_field :image4, class: "form-control"%><br />
+	<%= p.label :image5 %>
+	<%= p.file_field :image5, class: "form-control"%><br />
+	<%= p.label :image6 %>
+	<%= p.file_field :image6, class: "form-control"%><br />
+	<%= p.label :image7 %>
+	<%= p.file_field :image7, class: "form-control"%><br />
+	<%= p.label :image8 %>
+	<%= p.file_field :image8, class: "form-control"%><br />
+	<%= p.label :image9 %>
+	<%= p.file_field :image9, class: "form-control"%><br />
+	<%= p.label :image10 %>
+	<%= p.file_field :image10, class: "form-control"%><br />
+	<%= p.label :image11 %>
+	<%= p.file_field :image11, class: "form-control"%><br />
+	<%= p.label :image12 %>
+	<%= p.file_field :image12, class: "form-control"%><br />
+	<%= p.label :image13 %>
+	<%= p.file_field :image13, class: "form-control"%><br />
+	<%= p.label :image14 %>
+	<%= p.file_field :image14, class: "form-control"%><br />
+	<%= p.label :image15 %>
+	<%= p.file_field :image15, class: "form-control"%><br />
+	<%= p.submit 'Add Photo', class: "btn btn-primary"%>
+	<%= link_to 'Cancel', root_path %>
+<% end %>
+</h2>
+</div>

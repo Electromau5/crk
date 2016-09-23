@@ -18,6 +18,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'masonry-rails'
 gem 'fancybox2-rails'
+gem 'paperclip', '~> 4.3', '>= 4.3.3'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
