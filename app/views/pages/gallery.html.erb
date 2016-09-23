@@ -28,27 +28,122 @@
       <% Pin.all.where(:name => 'Internal Communications').each do |p| %>
         <%= link_to p.image.url(:large), :class => 'fancybox', :rel => 'group' do %>
           <div class="box col2">
-            <%= image_tag p.image.url(:thumb) %>
+            <%= image_tag p.image.url(:medium) %>
           </div>
           <% end %>
           <%= link_to p.image2.url(:large), :class => 'fancybox', :rel => 'group' do %>
           <div class="box col2">
-            <%= image_tag p.image2.url(:thumb) %>
+            <%= image_tag p.image2.url(:medium) %>
           </div>
           <% end %>
           <%= link_to p.image3.url(:large), :class => 'fancybox', :rel => 'group' do %>
           <div class="box col2">
-            <%= image_tag p.image3.url(:thumb) %>
+            <%= image_tag p.image3.url(:medium) %>
           </div>
           <% end %>
           <%= link_to p.image4.url(:large), :class => 'fancybox', :rel => 'group' do %>
           <div class="box col2">
-            <%= image_tag p.image4.url(:thumb) %>
+            <%= image_tag p.image4.url(:medium) %>
           </div>
           <% end %>
           <%= link_to p.image5.url(:large), :class => 'fancybox', :rel => 'group' do %>
           <div class="box col2">
-            <%= image_tag p.image5.url(:thumb) %>
+            <%= image_tag p.image5.url(:medium) %>
+          </div>
+          <% end %>
+      <% end %>
+  </div><br />
+  <h2 style="text-align:center;background-color: #000;color: #fff">EVENTS AND PRESS</h2>
+  <div class="container">
+      <% Pin.all.where(:name => 'Events and Press').each do |p| %>
+        <%= link_to p.image.url(:large), :class => 'fancybox', :rel => 'group' do %>
+          <div class="box col2">
+            <%= image_tag p.image.url(:medium) %>
+          </div>
+          <% end %>
+          <%= link_to p.image2.url(:large), :class => 'fancybox', :rel => 'group' do %>
+          <div class="box col2">
+            <%= image_tag p.image2.url(:medium) %>
+          </div>
+          <% end %>
+          <%= link_to p.image3.url(:large), :class => 'fancybox', :rel => 'group' do %>
+          <div class="box col2">
+            <%= image_tag p.image3.url(:medium) %>
+          </div>
+          <% end %>
+          <%= link_to p.image4.url(:large), :class => 'fancybox', :rel => 'group' do %>
+          <div class="box col2">
+            <%= image_tag p.image4.url(:medium) %>
+          </div>
+          <% end %>
+          <%= link_to p.image5.url(:large), :class => 'fancybox', :rel => 'group' do %>
+          <div class="box col2">
+            <%= image_tag p.image5.url(:medium) %>
+          </div>
+          <% end %>
+                <%= link_to p.image6.url(:large), :class => 'fancybox', :rel => 'group' do %>
+          <div class="box col2">
+            <%= image_tag p.image6.url(:medium) %>
+          </div>
+          <% end %>
+          <%= link_to p.image7.url(:large), :class => 'fancybox', :rel => 'group' do %>
+          <div class="box col2">
+            <%= image_tag p.image7.url(:medium) %>
+          </div>
+          <% end %>
+          <%= link_to p.image8.url(:large), :class => 'fancybox', :rel => 'group' do %>
+          <div class="box col2">
+            <%= image_tag p.image8.url(:medium) %>
+          </div>
+          <% end %>
+          <% end %>
+  </div><br />
+          <h2 style="text-align:center;background-color: #000;color: #fff">EVENTS AND PRESS</h2>
+  <div class="container">
+      <% Pin.all.where(:name => 'Campaigns').each do |p| %>
+        <%= link_to p.image.url(:large), :class => 'fancybox', :rel => 'group' do %>
+          <div class="box col2">
+            <%= image_tag p.image.url(:medium) %>
+          </div>
+          <% end %>
+          <%= link_to p.image2.url(:large), :class => 'fancybox', :rel => 'group' do %>
+          <div class="box col2">
+            <%= image_tag p.image2.url(:medium) %>
+          </div>
+          <% end %>
+          <%= link_to p.image3.url(:large), :class => 'fancybox', :rel => 'group' do %>
+          <div class="box col2">
+            <%= image_tag p.image3.url(:medium) %>
+          </div>
+          <% end %>
+          <%= link_to p.image4.url(:large), :class => 'fancybox', :rel => 'group' do %>
+          <div class="box col2">
+            <%= image_tag p.image4.url(:medium) %>
+          </div>
+          <% end %>
+          <%= link_to p.image5.url(:large), :class => 'fancybox', :rel => 'group' do %>
+          <div class="box col2">
+            <%= image_tag p.image5.url(:medium) %>
+          </div>
+          <% end %>
+          <%= link_to p.image6.url(:large), :class => 'fancybox', :rel => 'group' do %>
+          <div class="box col2">
+            <%= image_tag p.image6.url(:medium) %>
+          </div>
+          <% end %>
+          <%= link_to p.image7.url(:large), :class => 'fancybox', :rel => 'group' do %>
+          <div class="box col2">
+            <%= image_tag p.image7.url(:medium) %>
+          </div>
+          <% end %>
+          <%= link_to p.image8.url(:large), :class => 'fancybox', :rel => 'group' do %>
+          <div class="box col2">
+            <%= image_tag p.image8.url(:medium) %>
+          </div>
+          <% end %>
+          <%= link_to p.image9.url(:large), :class => 'fancybox', :rel => 'group' do %>
+          <div class="box col2">
+            <%= image_tag p.image9.url(:medium) %>
           </div>
           <% end %>
       <% end %>
